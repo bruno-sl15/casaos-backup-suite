@@ -1,0 +1,6 @@
+# Files to ignore
+*.env
+logs/
+
+# Keep this files
+!config.exemple.env

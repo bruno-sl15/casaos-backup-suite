@@ -1,0 +1,7 @@
+Media/Movies
+Media/TV Shows
+tv-sonnar
+.Trash*
+*.tmp
+AppData/mariadb
+AppData/redis
