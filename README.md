@@ -43,6 +43,11 @@ A lightweight, robust Disaster Recovery (DR) solution for **CasaOS**. It automat
   ```bash
   chmod 600 config.env
   ```
+* **Run backups in background (detach):** Pass `--detach` to free the terminal right after the banner while the backup keeps running:
+  ```bash
+  sudo ./casaos_backup.sh --detach
+  ```
+  The script detaches to the background and keeps writing to `logs/backup_*.log`. You can close the terminal safely.
 
 ---
 
