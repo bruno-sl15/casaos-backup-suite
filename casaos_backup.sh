@@ -42,7 +42,7 @@ echo "To follow the execution in real time, run: tail -f \"$LOG_FILE\""
 # OPTIONAL DETACH MODE (--detach)
 # Runs the script in background and frees the terminal after the banner above
 # ==========================================
-if [[ "${1:-}" == "--detach" && "${_CBS_DETACHED:-}" != "1" ]]; then
+if [[ ("${1:-}" == "--detach" || "${1:-}" == "-d") && "${_CBS_DETACHED:-}" != "1" ]]; then
   echo ""
   echo "Backup is running in the background. You can close this terminal safely."
   _CBS_DETACHED=1 setsid nohup "$SCRIPT_DIR/casaos_backup.sh" --detach >/dev/null 2>&1 &
